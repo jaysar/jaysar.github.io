@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf8">
+<title>react intro</title>
+
+<script>
+
+var getProfilePic = function (username) {
+  return "pic of " + username;
+}
+
+var getProfileLink = function (username)  {
+  return "profile link of " + username;
+}
+
+var getAvatarInfo = function (username)  {
+  return {
+    pic: getProfilePic(username),
+    profileLink: getProfileLink(username)
+  }
+}
+
+</script>
+</head>
+<body>
+
+  <h1>Welcome to React!!</h1>
+
+  <script>console.log("profile : " + getAvatarInfo("jayant").profileLink);</script>
+
+
+</body>
+
+
+
+</html>
